@@ -22,9 +22,7 @@ include_subgraph_errors:
   all: true
 
 cors:
-  policies:
-    - origins:
-        - "https://studio.apollographql.com"
+  allow_any_origin: true
 
 headers:
   subgraphs:
