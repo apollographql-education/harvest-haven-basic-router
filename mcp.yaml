@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=https://github.com/apollographql/apollo-mcp-server/releases/download/v0.6.0/config.schema.json
+
+# Use uplink for operations
+operations:
+  source: uplink
+
+# Use uplink for schema information
+schema:
+  source: uplink
+
+# Configure the MCP server to listen for streamable HTTP messages on port 8000
+# for all addresses
+transport:
+  type: streamable_http
+  address: "0.0.0.0"
+  port: 8000
